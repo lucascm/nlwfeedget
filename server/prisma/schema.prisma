@@ -12,7 +12,8 @@ datasource db {
 
 model feedback {
 
-  id String @id @default(uuid()) @map("_id") @db.ObjectId
+  // id String @id @default(uuid()) @map("_id") @db.ObjectId
+  id String @id @default(auto()) @map("_id") @db.ObjectId
 
   type String
   comment String
